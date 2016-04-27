@@ -10,8 +10,8 @@
 
   function TabCtrl($ionicSlideBoxDelegate, $ionicTabsDelegate){
 
-
     var vm = this;
+
     vm.selectedTab = 0;
     vm.selectTabWithIndex = selectTabWithIndex;
     vm.slideChanged = slideChanged;
@@ -22,7 +22,6 @@
     }
 
     function slideChanged(index){
-      console.log("entrou!!!!!!!!!!");
       switch (index) {
         case 0:
           vm.selectTabWithIndex(0);
@@ -33,7 +32,6 @@
         case 2:
           vm.selectTabWithIndex(2);
           break;
-        default:
       }
     }
   }
